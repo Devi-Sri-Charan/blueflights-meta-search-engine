@@ -1,0 +1,107 @@
+/* Main styles for Blueflights application */
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .app > .container {
+    flex: 1;
+  }
+  
+  /* Header styles */
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  /* Flight search form */
+  .flight-search .card {
+    border-radius: 10px;
+  }
+  
+  /* Airport dropdown */
+  .airport-dropdown {
+    z-index: 1050;
+  }
+  
+  /* Flight card */
+  .flight-card {
+    transition: transform 0.2s ease;
+    border-radius: 10px;
+  }
+  
+  .flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Flight line */
+  .flight-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .airline {
+    margin-right: 10px;
+  }
+  
+  .airline-logo {
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    padding: 5px;
+  }
+  
+  /* Connection info */
+  .connection-info {
+    position: relative;
+  }
+  
+  .connection-info::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px dashed #dee2e6;
+    z-index: -1;
+  }
+  
+  /* Loading spinner */
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  /* Sorting options */
+  .btn-group .btn {
+    border-radius: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .flight-line {
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    
+    .airline {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .btn-group {
+      flex-direction: column;
+    }
+    
+    .btn-group .btn {
+      margin-bottom: 5px;
+    }
+  }
