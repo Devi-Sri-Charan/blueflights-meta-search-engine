@@ -46,6 +46,29 @@ export const verifyFlightPrice = async (flightOffer) => {
   }
 };
 
+export const getAirportByCode = async (code) => {
+  try {
+    // Add your actual API call here
+    // For example:
+    // const response = await fetch(`/api/airports/${code}`);
+    // return await response.json();
+    
+    // For now, returning a mock response with the IATA code
+    return {
+      id: `airport-${code}`,
+      name: code, // This would normally be the actual airport name
+      iataCode: code,
+      address: {
+        cityName: 'City', // This would be the actual city
+        countryName: 'Country' // This would be the actual country
+      }
+    };
+  } catch (error) {
+    console.error('Error fetching airport by code:', error);
+    throw error;
+  }
+};
+
 // Search for airports and cities
 export const searchAirports = async (keyword) => {
   try {
