@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Row, Col, Card } from 'react-bootstrap';
-import AirportAutoComplete from './AirportAutoComplete';
+import AirportAutoComplete from '../AirportAutoComplete/AirportAutoComplete';
+import './FlightSearch.css'; // Import your CSS file for styling
 
 function FlightSearch() {
     const today = new Date().toISOString().split('T')[0];

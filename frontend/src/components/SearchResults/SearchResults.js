@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Row, Col, Form, Badge, Accordion, Button } from 'react-bootstrap';
-import FlightCard from './FlightCard';
-import SortingOptions from './SortingOptions';
+import FlightCard from '../FlightCard/FlightCard';
+import SortingOptions from '../SortingOptions/SortingOptions';
+import './SearchResults.css';
 
 function SearchResults({ results, dictionaries, setIsLoading, setError }) {
   const [flightOffers, setFlightOffers] = useState([]);

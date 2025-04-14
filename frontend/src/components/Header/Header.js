@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Header.css'; // Import your CSS file for custom styles
 
 function Header() {
   return (

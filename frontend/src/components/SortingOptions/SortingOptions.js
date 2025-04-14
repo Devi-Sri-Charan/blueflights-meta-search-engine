@@ -1,5 +1,6 @@
 import React from 'react';
 import { ButtonGroup, Button, Card, Dropdown } from 'react-bootstrap';
+import './SortingOptions.css'; // Import your CSS file for custom styles
 
 function SortingOptions({ sortOption, onSortChange, resultsCount }) {
   const getSortLabel = (option) => {

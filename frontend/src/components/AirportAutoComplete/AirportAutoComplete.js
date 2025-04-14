@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Form, Spinner } from 'react-bootstrap';
-import { searchAirports } from '../services/api';
+import { searchAirports } from '../../services/api';
+import './AirportAutoComplete.css'; // Import your CSS file for custom styles
 
 function AirportAutoComplete({ label, placeholder, onChange, required }) {
   const [keyword, setKeyword] = useState('');

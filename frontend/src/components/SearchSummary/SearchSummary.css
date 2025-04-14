@@ -1,0 +1,40 @@
+/* Search Summary */
+.search-summary {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .search-summary .route {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 1.1rem;
+  }
+  
+  .search-summary .dates {
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+  
+  .search-summary .stats {
+    color: var(--primary);
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .search-summary {
+      padding: 1rem;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .search-summary .modify-search {
+      margin-top: 0.75rem;
+    }
+  }

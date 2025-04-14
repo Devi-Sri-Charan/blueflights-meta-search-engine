@@ -1,0 +1,36 @@
+/* Airport dropdown */
+.airport-dropdown {
+    z-index: 1050;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 8px 0;
+  }
+  
+  .airport-dropdown .dropdown-item {
+    padding: 10px 16px;
+    transition: background-color 0.2s;
+  }
+  
+  .airport-dropdown .dropdown-item:hover {
+    background-color: rgba(58, 134, 255, 0.1);
+  }
+  
+  .airport-autocomplete {
+    position: relative;
+  }
+  
+  .airport-autocomplete .form-control {
+    padding-right: 30px;
+  }
+  
+  .airport-autocomplete .clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--gray);
+    cursor: pointer;
+  }

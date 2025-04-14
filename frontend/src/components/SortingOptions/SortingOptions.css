@@ -1,0 +1,93 @@
+/* Sorting options */
+.sorting-options {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-group .btn {
+    border-radius: 8px;
+    margin: 0 3px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+  }
+  
+  .filter-sidebar .card {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  
+  .filter-sidebar h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Improve filter sidebar */
+  .filter-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .price-range-slider {
+    height: 5px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    outline: none;
+    transition: background 0.2s;
+  }
+  
+  .price-range-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .price-range-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Form check customization */
+  .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .form-check-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(58, 134, 255, 0.25);
+  }
+  
+  /* Responsive styles for sorting and filters */
+  @media (max-width: 992px) {
+    .btn-group {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .btn-group .btn {
+      margin-bottom: 8px;
+      flex: 0 0 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .btn-group .btn {
+      flex: 0 0 100%;
+    }
+    
+    .sorting-options {
+      flex-direction: column;
+    }
+    
+    .sorting-options h6 {
+      margin-bottom: 10px;
+    }
+  }

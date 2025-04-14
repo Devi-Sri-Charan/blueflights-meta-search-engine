@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './SearchSummary.css'; // Import your CSS file for custom styles
 
 function SearchSummary({ searchParams }) {
   // Extract search parameters

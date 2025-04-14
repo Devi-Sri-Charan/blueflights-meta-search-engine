@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import SearchResults from './SearchResults';
-import SearchSummary from './SearchSummary';
-import { searchFlights } from '../services/api';
+import SearchResults from '../SearchResults/SearchResults';
+import SearchSummary from '../SearchSummary/SearchSummary';
+import { searchFlights } from '../../services/api';
+import './ResultsPage.css'; // Import your CSS file for custom styles
 
 function ResultsPage() {
   const [searchParams] = useSearchParams();

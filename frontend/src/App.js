@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import Header from './components/Header';
-import FlightSearch from './components/FlightSearch';
-import ResultsPage from './components/ResultsPage';
+import Header from './components/Header/Header';
+import FlightSearch from './components/FlightSearch/FlightSearch';
+import ResultsPage from './components/ResultsPage/ResultsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/main.css';
 

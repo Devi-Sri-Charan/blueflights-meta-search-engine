@@ -1,0 +1,41 @@
+/* Header styles */
+.navbar {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+    background: var(--gradient);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .navbar-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark mode toggle - moved from main.css since it's part of header */
+  .dark-mode-toggle {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }

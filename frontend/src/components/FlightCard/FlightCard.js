@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Badge, Button, Collapse } from 'react-bootstrap';
-import { verifyFlightPrice } from '../services/api';
+import { verifyFlightPrice } from '../../services/api';
+import './FlightCard.css'; // Import your CSS file for custom styles
 
 function FlightCard({ offer, dictionaries, setIsLoading, setError }) {
   const [showDetails, setShowDetails] = useState(false);
