@@ -1,4 +1,4 @@
-const API_URL = 'https://your-backend-url.render.com/api';
+const API_URL = 'https://blueflights-meta-search-engine.onrender.com';
 
 // Search for flights
 export const searchFlights = async (searchData) => {
