@@ -1,83 +1,74 @@
 /* Flight search form */
-.flight-search .card {
+.flight-search-card {
     border-radius: 16px;
     border: none;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     overflow: hidden;
-  }
-  
-  .flight-search .card-header {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+}
+
+.flight-search-card .card-header {
     border-bottom: none;
-    padding: 1.25rem;
-  }
-  
-  .flight-search .form-control,
-  .flight-search .form-select {
+    padding: 1rem;
+    background: #007bff;
+}
+
+.flight-search-card .form-control,
+.flight-search-card .form-select {
     border-radius: 8px;
     padding: 0.75rem 1rem;
     border: 1px solid #e0e0e0;
     transition: all 0.2s ease;
-  }
-  
-  .flight-search .form-control:focus,
-  .flight-search .form-select:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.15);
-  }
-  
-  .flight-search .form-label {
+    background: #fff;
+}
+
+.flight-search-card .form-control:focus,
+.flight-search-card .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.flight-search-card .form-label {
     font-weight: 500;
     margin-bottom: 0.5rem;
-  }
-  
-  .flight-search .btn-primary {
+    color: #333;
+}
+
+.flight-search-card .btn-warning {
     border-radius: 8px;
     padding: 0.75rem 1.5rem;
     font-weight: 600;
-    background: var(--gradient);
+    background: #ff6200;
     border: none;
-    box-shadow: 0 4px 10px rgba(58, 134, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 98, 0, 0.3);
     transition: all 0.3s ease;
-  }
-  
-  .flight-search .btn-primary:hover {
+    color: #fff;
+}
+
+.flight-search-card .btn-warning:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(58, 134, 255, 0.4);
-  }
-  
-  /* Custom radio buttons */
-  .trip-type-selector {
-    display: flex;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .trip-type-radio {
+    box-shadow: 0 6px 15px rgba(255, 98, 0, 0.4);
+}
+
+.flight-search-card .trip-type-radio {
     display: none;
-  }
-  
-  .trip-type-label {
+}
+
+.flight-search-card .trip-type-label {
     flex: 1;
     text-align: center;
     padding: 0.75rem;
     cursor: pointer;
-    background-color: var(--light);
+    background-color: #f8f9fa;
     transition: all 0.3s;
     border: 1px solid #e0e0e0;
-  }
-  
-  .trip-type-label:first-of-type {
-    border-radius: 8px 0 0 8px;
-  }
-  
-  .trip-type-label:last-of-type {
-    border-radius: 0 8px 8px 0;
-  }
-  
-  .trip-type-radio:checked + .trip-type-label {
-    background-color: var(--primary);
+    border-radius: 8px;
+    margin: 0 0.5rem;
+}
+
+.flight-search-card .trip-type-radio:checked + .trip-type-label {
+    background-color: #007bff;
     color: white;
-    border-color: var(--primary);
-    box-shadow: 0 4px 10px rgba(58, 134, 255, 0.3);
-  }
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
